@@ -8,7 +8,9 @@ void handle_sign(int signh);
 void prompt(void)
 {
 	if (isatty(STDIN_FILENO))
+	{
 		write(STDOUT_FILENO, "$ ", 2);
+	}
 }
 
 /**
@@ -77,8 +79,8 @@ int main(void)
 }
 
 /**
- * handle_sign - function to handle signals
- * @signh: integer
+ * handle_sign - function to check for signs
+ * @signh: integer value
  * Return: void
 */
 

@@ -34,4 +34,5 @@ void _handle_buitin(char **line, char ***av, char **s_dup)
 		free(*s_dup);
 		exit(0);
 	}
+	return;
 }
